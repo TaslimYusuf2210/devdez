@@ -15,16 +15,18 @@ export class Navbar {
   }
 
   isLightMode = false;
+  // html = document.documentElement;
+
 
   handleToggleTheme() {
+    console.log(this.isLightMode)
     this.isLightMode = !this.isLightMode;
+    console.log(this.isLightMode)
     const html = document.documentElement;
-    html.classList.toggle('light')
-    if (this.isLightMode == false) {
+    if (this.isLightMode == true) {
       html.classList.add("light")
     } else {
       html.classList.remove("light")
     }
-    // this.cd.detectChanges()
   }
 }

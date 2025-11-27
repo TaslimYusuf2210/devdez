@@ -2,14 +2,38 @@
 
 @import "tailwindcss";
 
+@custom-variant light (&:where(.light, .light *));
+
 @theme {
     --color-default: #171716; /*Default or dark mode*/
     --color-text: #ffffff;
+    --hover-bg: #ffffff;
 
     --color-bg-light: #ffffff; /*Light mode*/
     --color-text-light: #111111;
+    --hover-bg-light: #000000;
     --font-manrope: "Manrope", sans-serif;
     --font-playwrite: "Playwrite CZ", cursive;
+}
+
+@layer {
+    .nav-element {
+        @apply transition-colors duration-700;
+
+    /* default mode hover*/
+    &:hover {
+      background-color: var(--hover-bg);
+      color: var(--hover-text);
+    }
+
+    /* light mode hover */
+    .light & {
+      &:hover {
+        background-color: var(--hover-bg-light);
+        color: var(--hover-text-light);
+      }
+    }
+    }
 }
 
 :root {
@@ -35,7 +59,7 @@ body { margin: 0; }
 
 .icon-rotate {
   display: inline-block;
-  transition: transform 0.4s ease, color 0.4s ease, opacity 0.4s ease;
+  transition: transform 0.7s ease, color 0.7s ease, opacity 0.7s ease;
 }
 
 .light .icon-rotate {

@@ -1,15 +1,27 @@
 <div class="flex justify-between items-center px-4 py-4">
-    <div class="font-playwrite text-lg">
-        Devdez
+    <div class="font-playwrite">
+        <img src="assets/logowhite.png" class="h-14 w-36" alt="Logo">
     </div>
     <div>
         <ul class="flex gap-8 text-base">
-            <li>Product</li>
-            <li>About</li>
-            <li id="themeToggle" class="" (click)="handleToggleTheme()">            
-                <i class="bi icon-rotate" [ngClass]="isLightMode ? 'bi-sun-fill' : 'bi-moon-fill'"></i>
+            <li class="cursor-pointer px-2 py-1 rounded-md hover:bg-(--hover-bg) hover:text-black light:hover:bg-(--hover-bg-light) light:hover:text-white">Product</li>
+            <li class="cursor-pointer px-2 py-1 rounded-md hover:bg-(--hover-bg) hover:text-black light:hover:bg-(--hover-bg-light) light:hover:text-white">About</li>
+            <li 
+            id="themeToggle" 
+            class="cursor-pointer px-2 py-1 rounded-md hover:bg-white hover:text-black " 
+            >            
+                <i 
+                class="bi icon-rotate" 
+                [ngClass]="isLightMode ? 'bi-moon-fill' : 'bi-sun-fill'"
+                (click)="handleToggleTheme()"></i>
             </li>
-            <li class="dark:bg-white bg-black">Get for free</li>
+            <li class="cursor-pointer px-2 py-1 rounded-2xl bg-white
+             text-black hover font-semibold text-sm grid place-items-center
+             hover:bg-black hover:text-white light:bg-default light: light:text-text
+             light:hover:bg-white light:hover:text-text-light
+             ">
+                Get for free
+            </li>
         </ul>
     </div>
 </div>

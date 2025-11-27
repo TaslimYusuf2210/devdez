@@ -1,9 +1,10 @@
 import { Component, AfterViewInit, ElementRef, ViewChild } from '@angular/core';
 import { Navbar } from '../navbar/navbar';
+import { Hero } from '../hero/hero';
 
 @Component({
   selector: 'app-main-component',
-  imports: [Navbar],
+  imports: [Navbar, Hero],
   templateUrl: './main-component.html',
   styleUrl: './main-component.css',
 })
