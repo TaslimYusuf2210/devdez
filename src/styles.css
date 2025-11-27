@@ -1,3 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import "tailwindcss";
+
+@theme {
+    --color-default: #171716; /*Default or dark mode*/
+    --color-text: #ffffff;
+
+    --color-bg-light: #ffffff; /*Light mode*/
+    --color-text-light: #111111;
+    --font-manrope: "Manrope", sans-serif;
+    --font-playwrite: "Playwrite CZ", cursive;
+}
+
+:root {
+    --bg: var(--color-default);
+    --text: var(--color-text);
+}
+
+.light {
+    --bg: var(--color-bg-light);
+    --text: var(--color-text-light);
+}
+
+* {
+  transition: background-color 0.7s ease, color 0.7s ease;
+}
+
+html, body { 
+    height: 100%; 
+    background-color: var(--bg);
+    color: var(--text);
+}
+body { margin: 0; }
+
+.icon-rotate {
+  display: inline-block;
+  transition: transform 0.4s ease, color 0.4s ease, opacity 0.4s ease;
+}
+
+.light .icon-rotate {
+  transform: rotate(360deg);
+}

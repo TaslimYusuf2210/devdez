@@ -1,0 +1,15 @@
+<div class="flex justify-between items-center px-4 py-4">
+    <div class="font-playwrite text-lg">
+        Devdez
+    </div>
+    <div>
+        <ul class="flex gap-8 text-base">
+            <li>Product</li>
+            <li>About</li>
+            <li id="themeToggle" class="" (click)="handleToggleTheme()">            
+                <i class="bi icon-rotate" [ngClass]="isLightMode ? 'bi-sun-fill' : 'bi-moon-fill'"></i>
+            </li>
+            <li class="dark:bg-white bg-black">Get for free</li>
+        </ul>
+    </div>
+</div>
