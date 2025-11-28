@@ -65,3 +65,10 @@ body { margin: 0; }
 .light .icon-rotate {
   transform: rotate(360deg);
 }
+
+.my-bg {
+  background-image: url('/assets/triangle.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
