@@ -66,9 +66,34 @@ body { margin: 0; }
   transform: rotate(360deg);
 }
 
-.my-bg {
+.hero-bg {
   background-image: url('/assets/triangle.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.token-bg {
+    background-image: url('/assets/token-bg.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.resource-bg-1 {
+    background-image: url('/assets/resource1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.resource-bg-2 {
+    background-image: url('/assets/resource2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.resource-bg-3 {
+    background-image: url('/assets/resource3.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
