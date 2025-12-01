@@ -1,39 +1,109 @@
-<div class="flex justify-between items-center px-4 py-4">
-    <div class="font-playwrite flex items-center gap-2">
-        <!-- <img src="assets/logowhite.png" class="h-14 w-36" alt="Logo"> -->
-         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 16 16"><path fill="#ffd600" d="M7 6h2c.554 0 1 .446 1 1v2c0 .554-.446 1-1 1H7c-.554 0-1-.446-1-1V7c0-.554.446-1 1-1"/><path fill="#aeea00" d="M7 0h2c.554 0 1 .446 1 1v3c0 .554-.446 1-1 1H7c-.554 0-1-.446-1-1V1c0-.554.446-1 1-1"/><path fill="#f57f17" d="M12 3h2c.554 0 1 .446 1 1v3c0 .554-.446 1-1 1h-2c-.554 0-1-.446-1-1V4c0-.554.446-1 1-1"/><path fill="#8e24aa" d="M12 9h2c.554 0 1 .446 1 1v3c0 .554-.446 1-1 1h-2c-.554 0-1-.446-1-1v-3c0-.554.446-1 1-1"/><path fill="#4db6ac" d="M7 11h2c.554 0 1 .446 1 1v3c0 .554-.446 1-1 1H7c-.554 0-1-.446-1-1v-3c0-.554.446-1 1-1"/><path fill="#e53935" d="M2 9h2c.554 0 1 .446 1 1v3c0 .554-.446 1-1 1H2c-.554 0-1-.446-1-1v-3c0-.554.446-1 1-1"/><path fill="#1565c0" d="M2 3h2c.554 0 1 .446 1 1v3c0 .554-.446 1-1 1H2c-.554 0-1-.446-1-1V4c0-.554.446-1 1-1"/></svg>
-        <div>
-            <div>
-                    <span class="text-[#ffd600]">D</span>
-                    <span class="text-[#aeea00]">e</span>
-                    <span class="text-[#f57f17]">v</span>
-                    <span class="text-[#8e24aa]">d</span>
-                    <span class="text-[#4db6ac]">e</span>
-                    <span class="text-[#e53935]">z</span>
-            </div>
-            <hr class="text-[#1565c0]">
-        </div>
-    </div>
+<div class="flex justify-between items-center px-4 py-4 fixed z-9999 w-full bg-default">
+  <div class="font-playwrite flex items-center z-50 gap-2">
+    <!-- <img src="assets/logowhite.png" class="h-14 w-36" alt="Logo"> -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 16 16">
+      <path
+        fill="#ffd600"
+        d="M7 6h2c.554 0 1 .446 1 1v2c0 .554-.446 1-1 1H7c-.554 0-1-.446-1-1V7c0-.554.446-1 1-1"
+      />
+      <path
+        fill="#aeea00"
+        d="M7 0h2c.554 0 1 .446 1 1v3c0 .554-.446 1-1 1H7c-.554 0-1-.446-1-1V1c0-.554.446-1 1-1"
+      />
+      <path
+        fill="#f57f17"
+        d="M12 3h2c.554 0 1 .446 1 1v3c0 .554-.446 1-1 1h-2c-.554 0-1-.446-1-1V4c0-.554.446-1 1-1"
+      />
+      <path
+        fill="#8e24aa"
+        d="M12 9h2c.554 0 1 .446 1 1v3c0 .554-.446 1-1 1h-2c-.554 0-1-.446-1-1v-3c0-.554.446-1 1-1"
+      />
+      <path
+        fill="#4db6ac"
+        d="M7 11h2c.554 0 1 .446 1 1v3c0 .554-.446 1-1 1H7c-.554 0-1-.446-1-1v-3c0-.554.446-1 1-1"
+      />
+      <path
+        fill="#e53935"
+        d="M2 9h2c.554 0 1 .446 1 1v3c0 .554-.446 1-1 1H2c-.554 0-1-.446-1-1v-3c0-.554.446-1 1-1"
+      />
+      <path
+        fill="#1565c0"
+        d="M2 3h2c.554 0 1 .446 1 1v3c0 .554-.446 1-1 1H2c-.554 0-1-.446-1-1V4c0-.554.446-1 1-1"
+      />
+    </svg>
     <div>
-        <ul class="flex gap-8 text-base">
-            <li class="cursor-pointer px-2 py-1 rounded-md hover:bg-(--hover-bg) hover:text-black light:hover:bg-(--hover-bg-light) light:hover:text-white">Product</li>
-            <li class="cursor-pointer px-2 py-1 rounded-md hover:bg-(--hover-bg) hover:text-black light:hover:bg-(--hover-bg-light) light:hover:text-white">About</li>
-            <li 
-            id="themeToggle" 
-            class="cursor-pointer px-2 py-1 rounded-md hover:bg-white hover:text-black " 
-            >            
-                <i 
-                class="bi icon-rotate" 
-                [ngClass]="isLightMode ? 'bi-moon-fill' : 'bi-sun-fill'"
-                (click)="handleToggleTheme()"></i>
-            </li>
-            <li class="cursor-pointer px-2 py-1 rounded-2xl bg-white
-             text-black hover font-semibold text-sm grid place-items-center
-             hover:bg-black hover:text-white light:bg-default light: light:text-text
-             light:hover:bg-white light:hover:text-text-light
-             ">
-                Get for free
-            </li>
-        </ul>
+      <div>
+        <span class="text-[#ffd600]">D</span>
+        <span class="text-[#aeea00]">e</span>
+        <span class="text-[#f57f17]">v</span>
+        <span class="text-[#8e24aa]">d</span>
+        <span class="text-[#4db6ac]">e</span>
+        <span class="text-[#e53935]">z</span>
+      </div>
+      <hr class="text-[#1565c0]" />
     </div>
+  </div>
+  <div class="">
+    <ul class="md:flex gap-8 text-base hidden">
+      <li
+        class="cursor-pointer px-2 py-1 rounded-md hover:bg-(--hover-bg) hover:text-black light:hover:bg-(--hover-bg-light) light:hover:text-white"
+      >
+        Product
+      </li>
+      <li
+        class="cursor-pointer px-2 py-1 rounded-md hover:bg-(--hover-bg) hover:text-black light:hover:bg-(--hover-bg-light) light:hover:text-white"
+      >
+        About
+      </li>
+      <li
+        id="themeToggle"
+        class="cursor-pointer px-2 py-1 rounded-md hover:bg-white hover:text-black"
+      >
+        <i
+          class="bi icon-rotate"
+          [ngClass]="isLightMode ? 'bi-moon-fill' : 'bi-sun-fill'"
+          (click)="handleToggleTheme()"
+        ></i>
+      </li>
+      <li
+        class="cursor-pointer px-2 py-1 rounded-2xl bg-white text-black hover font-semibold text-sm grid place-items-center hover:bg-black hover:text-white light:bg-default light: light:text-text light:hover:bg-white light:hover:text-text-light"
+      >
+        Get for free
+      </li>
+    </ul>
+    <!-- Mobile view for navbar -->
+    
+      <button class="md:hidden relative cursor-pointer  z-50" (click)="handleDropdown()">
+        <svg [ngClass]="isOpen ? 'hidden' : 'block'" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+          <path fill="currentColor" d="M4 6h24v2H4zm0 18h24v2H4zm0-12h24v2H4zm0 6h24v2H4z" />
+        </svg>
+        <svg [ngClass]="isOpen ? 'block' : 'hidden'" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24">
+            <path
+            fill="currentColor"
+            d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z"
+            />
+        </svg>
+    </button>
+      
+      <div *ngIf="isOpen" class="absolute left-0 px-3 pt-5 z-50 top-18 w-full ">
+        <ul class="text-base space-y-3">
+          <li class="hover:bg-gray-200 rounded-lg cursor-pointer w-full p-2 hover:text-black">Product</li>
+          <li class="hover:bg-gray-200 rounded-lg cursor-pointer w-full p-2 hover:text-black">About</li>
+          <li class="flex justify-between pr-2 py-2 items-center">
+            <span class="hover:bg-gray-200 rounded-lg p-2 cursor-pointer hover:text-black">Get for free</span>
+            <span class="cursor-pointer px-2 py-1  rounded-md hover:bg-white hover:text-black">
+                <i
+                  class="bi icon-rotate"
+                  [ngClass]="isLightMode ? 'bi-moon-fill' : 'bi-sun-fill'"
+                  (click)="handleToggleTheme()"
+                ></i>
+            </span>
+          </li>
+        </ul>
+      </div>
+    
+    <div *ngIf="isOpen" class="fixed inset-0 bg-default z-40 ">
+
+    </div>
+  </div>
 </div>

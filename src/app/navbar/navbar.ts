@@ -1,10 +1,10 @@
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgClass } from '@angular/common';
 import { ChangeDetectorRef, Component } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, NgClass],
   templateUrl: './navbar.html',
   styleUrl: './navbar.css',
 })
@@ -14,9 +14,13 @@ export class Navbar {
 
   }
 
+  isOpen = false;
   isLightMode = false;
   // html = document.documentElement;
 
+  handleDropdown() {
+    this.isOpen = !this.isOpen
+  }
 
   handleToggleTheme() {
     console.log(this.isLightMode)
