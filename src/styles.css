@@ -9,7 +9,7 @@
     --color-text: #ffffff;
     --hover-bg: #ffffff;
 
-    --color-bg-light: #ffffff; /*Light mode*/
+    --color-bg-light: #f4f5f6; /*Light mode*/
     --color-text-light: #111111;
     --hover-bg-light: #000000;
     --font-manrope: "Manrope", sans-serif;
@@ -18,7 +18,7 @@
 
 @layer {
     .nav-element {
-        @apply transition-colors duration-700;
+        @apply transition-colors duration-500;
 
     /* default mode hover*/
     &:hover {
@@ -34,6 +34,17 @@
       }
     }
     }
+}
+
+.hero-bg {
+  background-image: url('/assets/triangle.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.light .hero-bg {
+  background-image: url('/assets/light-triangle.jpg');
 }
 
 :root {
@@ -66,12 +77,14 @@ body { margin: 0; }
   transform: rotate(360deg);
 }
 
-.hero-bg {
-  background-image: url('/assets/triangle.jpg');
+
+
+/* .light-hero-bg {
+  background-image: url('/assets/light-triangle.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
+} */
 
 .token-bg {
     background-image: url('/assets/token-bg.avif');
