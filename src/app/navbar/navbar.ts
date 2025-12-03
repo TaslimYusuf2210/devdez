@@ -1,5 +1,6 @@
 import { CommonModule, NgClass } from '@angular/common';
 import { ChangeDetectorRef, Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -10,7 +11,7 @@ import { ChangeDetectorRef, Component } from '@angular/core';
 })
 export class Navbar {
 
-  constructor(private cd: ChangeDetectorRef) {
+  constructor(private cd: ChangeDetectorRef, private router: Router) {
 
   }
 
@@ -23,14 +24,27 @@ export class Navbar {
   }
 
   handleToggleTheme() {
-    console.log(this.isLightMode)
     this.isLightMode = !this.isLightMode;
-    console.log(this.isLightMode)
     const html = document.documentElement;
     if (this.isLightMode == true) {
       html.classList.add("light")
     } else {
       html.classList.remove("light")
+    }
+
+    this.isOpen ? this.isOpen = false : this.isOpen
+    // if (this.isOpen == true) {
+    //   setTimeout(() => {
+    //     this.isOpen = false
+    //   }, 500)
+    // }
+  }
+
+  scrollTo(id: string) {
+    const el = document.getElementById(id)
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+            this.isOpen = false;
     }
   }
 }

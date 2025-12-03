@@ -46,11 +46,13 @@
   <div class="">
     <ul class="md:flex gap-8 text-base hidden">
       <li
+        (click)="scrollTo('product')"
         class="cursor-pointer px-2 py-1 rounded-md hover:bg-(--hover-bg) hover:text-black light:hover:bg-(--hover-bg-light) light:hover:text-white"
       >
         Product
       </li>
       <li
+        (click)="scrollTo('about')"
         class="cursor-pointer px-2 py-1 rounded-md hover:bg-(--hover-bg) hover:text-black light:hover:bg-(--hover-bg-light) light:hover:text-white"
       >
         About
@@ -66,6 +68,7 @@
         ></i>
       </li>
       <li
+        (click)="scrollTo('getforfree')"
         class="cursor-pointer px-2 py-1 rounded-2xl bg-white text-black hover font-semibold text-sm grid place-items-center hover:bg-black hover:text-white light:bg-default light: light:text-text light:hover:bg-white light:hover:text-text-light"
       >
         Get for free
@@ -85,12 +88,25 @@
         </svg>
     </button>
       
-      <div *ngIf="isOpen" class="absolute left-0 px-3 pt-5 z-50 top-18 w-full ">
+      <div *ngIf="isOpen" class="absolute light:bg-bg-light left-0 px-3 pt-5 z-50 top-18 w-full ">
         <ul class="text-base space-y-3">
-          <li class="hover:bg-gray-200 rounded-lg cursor-pointer w-full p-2 hover:text-black">Product</li>
-          <li class="hover:bg-gray-200 rounded-lg cursor-pointer w-full p-2 hover:text-black">About</li>
-          <li class="flex justify-between pr-2 py-2 items-center">
-            <span class="hover:bg-gray-200 rounded-lg p-2 cursor-pointer hover:text-black">Get for free</span>
+          <li 
+          (click)="scrollTo('product')"
+          class="hover:bg-gray-200 rounded-lg cursor-pointer w-full p-2 hover:text-black">
+          Product
+          </li>
+          <li 
+          (click)="scrollTo('about')"
+          class="hover:bg-gray-200 rounded-lg cursor-pointer w-full p-2 hover:text-black">
+          About
+          </li>
+          <li 
+          class="flex justify-between pr-2 py-2 items-center">
+            <span 
+            (click)="scrollTo('getforfree')"
+            class="hover:bg-gray-200 rounded-lg p-2 cursor-pointer hover:text-black">
+            Get for free
+            </span>
             <span class="cursor-pointer px-2 py-1  rounded-md hover:bg-white hover:text-black">
                 <i
                   class="bi icon-rotate"
@@ -102,7 +118,7 @@
         </ul>
       </div>
     
-    <div *ngIf="isOpen" class="fixed inset-0 bg-default z-40 ">
+    <div *ngIf="isOpen" class="fixed inset-0 bg-default light:bg-bg-light z-40 ">
 
     </div>
   </div>
