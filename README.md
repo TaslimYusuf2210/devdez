@@ -1,59 +1,53 @@
-# Devdez
+# Devdez – Modern Frontend Design System Landing Page
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.0.
+![Hero Preview](screenshots/hero.png)
 
-## Development server
+A sleek, responsive landing page for **Devdez**, an open-source, ready-to-use frontend design system created by T-22 Tech. This conceptual marketing site showcases the system's modular approach, ease of adoption, and full customization potential while supporting both **light and dark themes**.
 
-To start a local development server, run:
+**Live Demo:** [Insert live demo link if deployed, e.g., Vercel/Netlify]  
+**Note:** This is a static promotional page for a fictional/open-source design system – the actual component library is conceptual.
 
-```bash
-ng serve
-```
+## Overview
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Devdez promotes rapid, consistent UI development with reusable components, proven patterns, and total flexibility. Key sections include:
 
-## Code scaffolding
+- **Hero Sections** (light & dark): Bold messaging – "Design like never before with Devdez" and "Devdez is an open-source, ready-to-use design system by T-22 Tech".
+- **Feature Cards**: Easy to adopt, Proven design solutions, Simple implementation, Total customization.
+- **Resources Section**: Downloadable assets like "Devdez - Components" (reusable UI library) and "Devdez - Light mode" (colors, icons, illustrations).
+- **Theme Toggle**: Seamless light/dark mode switching (sun/moon icon).
+- **Navigation & CTA**: Clean header with Product/About links and prominent "Get for free" buttons.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+The design prioritizes modern aesthetics, accessibility, and mobile-first responsiveness.
 
-```bash
-ng generate component component-name
-```
+## Features
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+- Fully responsive layout (mobile, tablet, desktop)
+- Light and dark theme support with smooth toggle
+- Clean, minimalist typography and spacing
+- Strong visual hierarchy with icons and card-based content
+- Consistent branding with colorful logo and gradient accents
 
-```bash
-ng generate --help
-```
+## Tech Stack
 
-## Building
+- HTML5 / CSS3 (utility-first styling using Tailwind CSS and custom classes)
+- TypeScript and Angular for interactivity and logic
+- Hosted on Netlify 
 
-To build the project run:
+## Screenshots
 
-```bash
-ng build
-```
+![Dark Mode Hero](screenshots/hero.png)
+![Light Mode Hero](screenshots/heroWhite.png)
+![About Light Mode](screenshots/about.png)
+![About Dark Mode](screenshots/aboutWhite.png)
+![Resources Dark Mode](screenshots/resource.png)
+![Resources Light Mode](screenshots/resourceWhite.png)
+![Get Dark Mode](screenshots/get.png)
+![Get Light Mode](screenshots/getWhite.png)
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
+## Setup (If Cloning)
 
 ```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+git clone https://github.com/TaslimYusuf2210/devdez.git
+cd devdez-landing
+# Simply open index.html in your browser
+# Or deploy instantly to Vercel/Netlify
